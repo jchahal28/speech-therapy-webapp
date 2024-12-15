@@ -1,4 +1,4 @@
-from openapi import OpenAI
+from openai import OpenAI
 client = OpenAI()
 def generate_random_sentence():
     response = client.chat.completions.create(
