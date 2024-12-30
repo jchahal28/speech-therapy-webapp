@@ -1,2 +1,5 @@
 openai == 1.55.3
 streamlit
+gTTS==2.5.3
+soundfile==0.12.1
+streamlit_mic_recorder==0.0.8
