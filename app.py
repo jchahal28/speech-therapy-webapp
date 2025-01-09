@@ -1,7 +1,8 @@
 import streamlit as st
 from streamlit_mic_recorder import mic_recorder
 from utils import generate_random_sentence, createAudio, saveAudio, get_transcript, cal_cosine, sentence_comparer
-IMAGE_ADDRESS="https://img.freepik.com/free-vector/hand-drawn-speech-therapy-scenes-collection_52683-78405.jpg"
+#IMAGE_ADDRESS="https://img.freepik.com/free-vector/hand-drawn-speech-therapy-scenes-collection_52683-78405.jpg"
+IMAGE_ADDRESS="https://img.freepik.com/free-vector/teddy-bear-concept-illustration_114360-1562.jpg?t=st=1736400332~exp=1736403932~hmac=214102eb6c79341b08028e84435cfdf2fe8f5410bfeebd714fe1987078074b2d&w=996"
 AUDIO_FILE="output.wav"
 SCORE_BENCHMARK = 0.98
 GUIDE=["The app will generate a random sentence and its audio. You can play the audio, view the sentence, or do both.",
@@ -13,7 +14,7 @@ def markdown_creators(*args):
     for chunks in args:
         st.markdown(f"- {chunks}")
         
-st.title("Speech Therapist")
+st.title("BuddyBear: Your Speech Therapist 🧸")
 st.image(IMAGE_ADDRESS,caption = "Speech Therapist")
 st.subheader("User Guide: How to Use the App 📒")
 markdown_creators(*GUIDE)
