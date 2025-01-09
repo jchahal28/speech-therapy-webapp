@@ -14,7 +14,7 @@ def markdown_creators(*args):
     for chunks in args:
         st.markdown(f"- {chunks}")
         
-st.title("BuddyBear: Your Speech Therapist 🧸")
+st.title("BuddyBear: Your Speech Therapist")
 st.image(IMAGE_ADDRESS,caption = "Speech Therapist")
 st.subheader("User Guide: How to Use the App 📒")
 markdown_creators(*GUIDE)
